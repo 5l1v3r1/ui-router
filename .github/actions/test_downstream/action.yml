@@ -1,0 +1,5 @@
+name: 'yarn test:downstream'
+description: 'Test Downstream Dependencies'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

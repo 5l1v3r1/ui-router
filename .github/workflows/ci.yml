@@ -3,6 +3,10 @@ name: 'CI: UIRouter for AngularJS'
 on: [push]
 
 jobs:
+  investigate:
+    steps:
+      - uses: ./.github/actions/test_downstream
+
   test:
     name: Unit Tests
     runs-on: ubuntu-latest
